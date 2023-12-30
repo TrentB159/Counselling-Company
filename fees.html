@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--PLACEHOMDER FAVICON, REMEBER TO REPLACE WHEN NEW ONE IS CREATED-->
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <title>Fees - Counselling & Company</title>
+    <script src="nav.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                <img src="images/TestLogo1.png"></a>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="nav-links ul" aria-expanded="false">img</button>
+                
+            <div class="nav-links">    
+                <ul data-visible="false">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="counselling.html">Counselling Services</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>    
+        </nav>
+    </div>
+    </header> 
+    <section class="fees-main-content">
+        <br>
+        <p>As a pre-registered therapist I recognize that client’s won’t be able to bill my services to their insurance 
+            providers at the start. Due to this my price list reflects reduced rates in order to make my services available 
+            to any who are interested. </p>
+            <br>
+        <p>Once I am certified as an RCC through the British Columbia Association of Clinical Counsellors my rates will go 
+            up; however, most insurance providers cover 80-100% of counselling depending on your original plan. </p>    
+    </section>
+
+    <section class="fees-flex-background">
+    <div class="fees-flex-container">
+        <div class="fees-flex-box">
+            <p>50 mins: $50 </p>
+        </div>
+        <div class="fees-flex-box">
+            <p>90 mins: $80</p>
+        </div>
+    </div>
+</section>
+
+<section class="fees-main-content">
+    <br>
+    <p>If you have any questions regarding the fee’s for service please don’t hesitate to reach out.</p>
+</section>
+
+<section class="contact-form-main">
+    <div class="contact-form-container">
+    <form action="https://formsubmit.co/P45minicar@gmail.com" method="POST">
+        <div class="form-group">
+            <div class="fullNameArea">
+                <label for="First Name">First Name</label>
+                <input type="text" id="First Name" name="First Name" required>
+            </div>
+            <div class="form-group">
+                <label for="Last Name">Last Name</label>
+                <input type="text" id="Last Name" name="Last Name" required>
+            </div>
+            <div class="form-group">
+                <label for="Email" class="cardHead">Email Address</label>
+                <input class="email" type="email" name="Email" required>
+            </div>
+            <div class="form-group">
+                <label for="Message">Message</label>
+                <textarea cols="50" rows="10" id="Message" name="Message"></textarea>
+            </div>
+    
+            <input type="hidden" name="_captcha" value="false">
+    
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+    
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Counseling and Co. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!--PLACEHOMDER FAVICON, REMEBER TO REPLACE WHEN NEW ONE IS CREATED-->
+    <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+    <title>FAQ - Counselling & Company</title>
+    <script src="nav.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                <img src="images/TestLogo1.png"></a>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-controls="nav-links ul" aria-expanded="false">img</button>
+                
+            <div class="nav-links">    
+                <ul data-visible="false">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="counselling.html">Counselling Services</a></li>
+                    <li><a href="fees.html">Fees</a></li>
+                    <li><a href="FAQ.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>    
+        </nav>
+    </div>
+    </header> 
+    <section class="faq-main-content">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Below are some freequently asked question that you might find helpful. If you have any other 
+            questions regarding me or my counselling services feel free to reach out through the form below.
+        </p>
+    </section>
+
+    <section id="faq" class="faq">
+        <ul>
+            <li>
+                <div class="question">
+                    <span>What services do you offer?</span>
+                    <span class="icon"><ion-icon name="add"></ion-icon></span>
+                </div>
+                <div class="answer">
+                    <span>I will be offering individual and *eventually* couple and group counselling services.
+                        Individuals are able to book either 50 minute or 90 minute sessions depending on their individual needs.</span>
+                </div>
+                <div class="question">
+                    <span>Do you have a speciality?</span>
+                    <span class="icon"><ion-icon name="add"></ion-icon></span>
+                </div>
+                <div class="answer">
+                    <span>I have worked with young adults and youth in the past. I use a person-centred narrative
+                        approach in my work.
+                    </span>
+                </div>
+                <div class="question">
+                    <span>Why did  you choose counselling as a career?</span>
+                    <span class="icon"><ion-icon name="add"></ion-icon></span>
+                </div>
+                <div class="answer">
+                    <span>I have always loved listening to others and working in union to find solutions.
+                        I wanted to work at a job where no day was ever the same. 
+                    </span>
+                </div>
+                <div class="question">
+                    <span>What do you love most about your career in counselling?</span>
+                    <span class="icon"><ion-icon name="add"></ion-icon></span>
+                </div>
+                <div class="answer">
+                    <span>During my practicum and into the early stages of my areer I am humbled by how willing
+                        clients have been to share intimate details about their life. I hold the confidentiality of 
+                        clients in high standerd in my practice.
+                    </span>
+                </div>
+                <div class="question">
+                    <span>What audience are you catering to?</span>
+                    <span class="icon"><ion-icon name="add"></ion-icon></span>
+                </div>
+                <div class="answer">
+                    <span>Starting out my career I am wanting and willing to cater to anyone wishing to obtain counselling services.
+                        I have worked closely with young adults and children during my practicum. However, wish to see all ages
+                        (and stages) in the work that I do.
+                    </span>
+                </div>
+                <div class="question">
+                    <span>How long are your sessions?</span>
+                    <span class="icon"><ion-icon name="add"></ion-icon></span>
+                </div>
+                <div class="answer">
+                    <span>I am offering a free 20 minute "intro" session. This is for potential clients to get to
+                        know me, the process, and make the best decision for themselves if they'd like to work with me.
+                        Individual session will be 50 and 90 minutes thereafter.
+                    </span>
+                </div>
+                <div class="question">
+                    <span>What are you most excited about now that you're beginning you practice?</span>
+                    <span class="icon"><ion-icon name="add"></ion-icon></span>
+                </div>
+                <div class="answer">
+                    <span>I am excited to start building connection with clients, and being able to use
+                        what I've learned in my Masters program and practicum experience to help others.
+                    </span>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <script>
+        const questions = document.querySelectorAll('.question')
+
+        questions.forEach(function (question){
+            question.addEventListener('click', function () {
+                question.classList.toggle('open')
+            })
+        })
+    </script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+    
+    <section class="contact-form-main">
+        <div class="contact-form-container">
+        <form action="https://formsubmit.co/P45minicar@gmail.com" method="POST">
+            <div class="form-group">
+                <div class="fullNameArea">
+                    <label for="First Name">First Name</label>
+                    <input type="text" id="First Name" name="First Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="Last Name">Last Name</label>
+                    <input type="text" id="Last Name" name="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="Email" class="cardHead">Email Address</label>
+                    <input class="email" type="email" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Message">Message</label>
+                    <textarea cols="50" rows="10" id="Message" name="Message"></textarea>
+                </div>
+        
+                <input type="hidden" name="_captcha" value="false">
+        
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+        
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Counselling & Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
